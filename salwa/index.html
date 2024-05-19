@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Applications</title>
+    <style>
+        /* Styling for the body */
+        body {
+            background-color: #f5efef;
+            background-image: url('C:/Users/salwa/OneDrive/Documents/salwa/images/blank.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            color: #0c0c0c;
+            padding: 20px;
+        }
+
+        /* Styling for buttons */
+        button {
+            background-color: #4CAF50;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            display: block;
+            font-size: 16px;
+            margin: 10px auto;
+            cursor: pointer;
+        }
+
+        /* Styling for buttons when hovered */
+        button:hover {
+            background-color: #a0458c;
+        }
+
+        /* Styling for images */
+        img {
+            display: none; /* Initially hide images */
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Web Applications</h1>
+</header>
+<main>
+    <h2>What is a Web Application</h2>
+    <p>
+        <!-- Description of web applications -->
+        A web application is software that runs in a web browser.
+        Businesses use web applications to exchange information and deliver services remotely.
+        These applications connect with customers conveniently and securely through features such as shopping carts, product searches, instant messaging, and social media newsfeeds.
+        Web applications enable access to complex functionalities without requiring the installation or configuration of additional software.
+    </p>
+    <!-- Button to toggle the visibility of the app image -->
+    <button onclick="toggleImage('appImage')">Click</button>
+
+    <h2>How do Web Applications interact with Back-End Databases</h2>
+    <ol>
+        <!-- List of steps describing interaction with back-end databases -->
+        <li>
+            <strong>Client Request:</strong>
+            <br>
+            The user performs an action (e.g., filling out a form or clicking a button) that generates a request sent to the server.
+        </li>
+        <li>
+            <strong>Server Processing:</strong>
+            <br>
+            The server receives and processes the client request. This may involve formulating a database query to either retrieve or modify data.
+        </li>
+        <li>
+            <strong>Database Query:</strong>
+            <br>
+            The server-side script constructs a query to the database. This can be a read operation (SELECT) to fetch data or a write operation (INSERT, UPDATE, DELETE) to change data.
+        </li>
+        <li>
+            <strong>Database Response:</strong>
+            <br>
+            The database executes the query and sends the results back to the server. For read operations, it returns the requested data. For write operations, it confirms that the data manipulation was successful.
+        </li>
+        <li>
+            <strong>Server Response:</strong>
+            <br>
+            The server processes the database's response and generates a response to be sent back to the client. This might include the requested data or a confirmation message.
+        </li>
+        <li>
+            <strong>Client Update:</strong>
+            <br>
+            The client-side script receives the server's response and updates the user interface accordingly, displaying new information or confirming the success of an action. This interaction ensures that the web application remains dynamic and responsive, providing users with up-to-date data and interactive features.
+        </li>
+    </ol>
+    
+    <h2>Examples of Intranet and Internet Use Cases in Businesses</h2>
+    <p>
+        <!-- Examples of intranet and internet use cases -->
+        An intranet content management system (CMS) supports document management and data storage, information publishing,
+        customizable sitemap and navigation, integration with third-party tools, a collaborative workspace for employees,
+        and a virtual meeting space.
+        Internet use cases include e-commerce platforms for online shopping and payments,
+        customer relationship management (CRM) systems for managing customer data and sales, marketing and advertising tools for
+        social media management and SEO, and online collaboration tools for project management and video conferencing.
+    </p>
+    <!-- Button to toggle the visibility of the use cases image -->
+    <button onclick="toggleImage('useCasesImage')">Click </button>
+
+    <!-- Images that will be toggled -->
+    <img id="appImage" src="C:\Users\salwa\OneDrive\Documents\salwa\images\web.webp" alt="Web Applications Image" />
+    <img id="useCasesImage" src="C:\Users\salwa\OneDrive\Documents\salwa\images\web2.jpg" alt="Use Cases Image" />
+
+    <script>
+        /* Function to toggle the visibility of an image */
+        function toggleImage(imageId) {
+            var image = document.getElementById(imageId);
+            if (image.style.display === "none" || image.style.display === "") {
+                image.style.display = "block"; // Show the image
+            } else {
+                image.style.display = "none"; // Hide the image
+            }
+        }
+    </script>
+</main>
+</body>
+</html>

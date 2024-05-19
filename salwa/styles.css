@@ -1,0 +1,38 @@
+/* styles.css */
+
+/* Styling for the body */
+body {
+    background-color: #f5efef;
+    background-image: url('C:/Users/salwa/OneDrive/Desktop/hhhh/blank.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: #0c0c0c;
+    padding: 20px;
+}
+
+/* Styling for buttons */
+button {
+    background-color: #4CAF50;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+/* Styling for buttons when hovered */
+button:hover {
+    background-color: #a0458c;
+}
+
+/* Styling for images */
+img {
+    display: none; /* Initially hide images */
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
